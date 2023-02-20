@@ -69,7 +69,7 @@ const nextButton = document.getElementById("next-btn")
 // Elemento atual
 let currentElement = 0
 
-// Função para obter o elementos criados
+// Função para obter os elementos criados
 function getElements() {
     const element = elements[currentElement]
     const image = element.img
@@ -85,7 +85,7 @@ function getElements() {
 // Chamando a função no documento
 getElements()
 
-// Função para a próximo elemento
+// Função para o próximo elemento
 function nextElement() {
     currentElement++
     if(currentElement === elements.length) {
