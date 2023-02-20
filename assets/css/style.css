@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.review img {
+    display: inline-block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(85%);
+}
+
+.review-text {
+    position: absolute;
+    max-width: 600px;
+    top: 50%;
+    left: 5%;
+    transform: translateY(-50%);
+    padding: 0 10px 10px;
+}
+
+.review-text h1 {
+    color: #8e0df8;
+    font-size: 3rem;
+    font-size: 700;
+}
+
+.review-text h3 {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+
+.review-text p {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 30px;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 7%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.buttons i {
+    background-color: #8e0df8;
+    padding: 13px;
+    border-radius: 50%; 
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+    .review-text {
+        left: 3%;
+    }
+
+    .review-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .review-text h3 {
+        font-size: 16px;
+    }
+
+    .review-text p {
+        font-size: 15px;
+    }
+
+    .buttons {
+        bottom: 5%;
+    }
+}
